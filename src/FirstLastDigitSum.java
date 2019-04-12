@@ -25,9 +25,11 @@
 
 public class FirstLastDigitSum {
 
-    public static void sumFirstAndLastDigit(int number) {
+    public static int sumFirstAndLastDigit(int number) {
 
-
+        if (number < 0) {
+            return -1;
+        }
 
     }
 
