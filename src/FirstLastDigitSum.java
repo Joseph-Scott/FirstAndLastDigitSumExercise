@@ -25,12 +25,29 @@
 
 public class FirstLastDigitSum {
 
+    public static void main(String[] args) {
+        System.out.println("Sum is: " + sumFirstAndLastDigit(234));
+    }
+
     public static int sumFirstAndLastDigit(int number) {
 
         if (number < 0) {
             return -1;
         }
 
+        int lastDigit = number % 10;
+        int firstDigit = 0;
+
+        while(number >= 10) {
+            number /= 10;
+        }
+        firstDigit = number;
+
+        System.out.println("Last digit is: " + lastDigit + " First digit is: " + firstDigit);
+        return lastDigit + firstDigit;
+
     }
+
+
 
 }
